@@ -21,7 +21,7 @@
   }
 
   &__item:not(:last-child)::after {
-    content: url('./icons/dots-mob.svg');
+    content: url('../icons/dots-mob.svg');
     font-size: 0;
 
     @media #{$desktop} {
@@ -29,7 +29,7 @@
       top: calc(#{$img-size} / 2 - 3px);
       right: -68px;
 
-      content: url('./icons/dots.svg');
+      content: url('../icons/dots.svg');
     }
   }
 

@@ -57,7 +57,7 @@
 
   &__payments::before {
     @media #{$desktop} {
-      content: url('./icons/pipe.svg');
+      content: url('../icons/pipe.svg');
       margin-left: 40px;
       font-size: 0;
     }
@@ -65,7 +65,7 @@
 
   &__contacts::before {
     @media #{$tablet-lg} {
-      content: url('./icons/pipe.svg');
+      content: url('../icons/pipe.svg');
       margin-left: 42px;
       font-size: 0;
     }

@@ -4,17 +4,17 @@ $grid-cols: 1;
 $grid-cols-tablet: 3;
 
 .order {
-  background-image: url(./img/bg-order-mob.png);
+  background-image: url(../img/bg-order-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media #{$tablet} {
-    background-image: url(./img/bg-order-tab.png);
+    background-image: url(../img/bg-order-tab.png);
   }
 
   @media #{$tablet-lg} {
-    background-image: url(./img/bg-order-desk.png);
+    background-image: url(../img/bg-order-desk.png);
   }
 
   &__container {

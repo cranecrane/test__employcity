@@ -1,15 +1,15 @@
 .hero {
-  background-image: url(./img/hero-bg-mobile.jpg);
+  background-image: url(../img/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media #{$tablet} {
-    background-image: url(./img/hero-bg-tablet.jpg);
+    background-image: url(../img/hero-bg-tablet.jpg);
   }
 
   @media #{$tablet-lg} {
-    background-image: url(./img/hero-bg.jpg);
+    background-image: url(../img/hero-bg.jpg);
   }
 
   &__container {
