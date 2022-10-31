@@ -76,6 +76,8 @@ $grid-cols-tablet: 3;
   }
 
   &__file-btn {
+    margin-top: auto;
+    max-height: $input-height;
     font-size: 15px;
   }
 
