@@ -1,0 +1,92 @@
+$form-grid-gap: 20px;
+$form-grid-gap-tablet: 30px;
+$grid-cols: 1;
+$grid-cols-tablet: 3;
+
+.order {
+  background-image: url(../../img/bg-order-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media #{$tablet} {
+    background-image: url(../../img/bg-order-tab.png);
+  }
+
+  @media #{$tablet-lg} {
+    background-image: url(../../img/bg-order-desk.png);
+  }
+
+  &__container {
+    padding-top: 90px;
+    padding-bottom: 110px;
+
+    text-align: center;
+    color: $text-color-inverse;
+
+    @media #{$tablet} {
+      padding-top: 121px;
+      padding-bottom: 150px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 29px;
+
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @media #{$tablet} {
+      font-size: 36px;
+    }
+  }
+
+  &__title--accent {
+    color: $accent-color-main;
+  }
+
+  &__descr {
+    margin-bottom: 82px;
+
+    font-size: 18px;
+    color: $silver;
+  }
+
+  &__steps {
+    margin-bottom: 86px;
+  }
+
+  &__form-elems {
+    display: grid;
+    grid-template-columns: repeat($grid-cols, 1fr);
+    gap: $form-grid-gap;
+
+    margin-bottom: 56px;
+
+    @media #{$tablet} {
+      grid-template-columns: repeat($grid-cols-tablet, 1fr);
+      gap: $form-grid-gap-tablet;
+    }
+  }
+
+  &__range-slider {
+    @media #{$tablet} {
+      grid-column: span 2;
+    }
+  }
+
+  &__file-btn {
+    font-size: 15px;
+  }
+
+  &__submit-btn {
+    padding-bottom: 14px;
+    width: 100%;
+
+    @media #{$tablet} {
+      margin: 0 auto;
+      width: calc((100% - (#{$form-grid-gap-tablet} * (#{$grid-cols-tablet} - 1))) / 3);
+      font-size: 15px;
+    }
+  }
+}

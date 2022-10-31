@@ -1,0 +1,26 @@
+.input {
+  border-radius: $input-border-radius;
+  border: $input-border;
+  padding: $input-padding;
+  width: 100%;
+  max-height: $input-height;
+
+  font-family: $font-family;
+  font-size: $input-font-size;
+  color: $sharade;
+
+  background-color: rgba($white, .85);
+  transition: border-color .3s ease-in-out;
+}
+
+.input::placeholder {
+  font-family: $font-family;
+  font-size: $input-font-size;
+  color: $storm-gray;
+}
+
+.input:focus-visible,
+.input:hover {
+  border-color: $accent-color-main;
+  transition: border-color .3s ease-in-out;
+}

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll('input[type="file"]'),n=e=>{var n=e.target;const t=n.nextElementSibling;e=t.innerHTML;let l="";l=n.files&&1<n.files.length?`${n.files.length} файлов выбрано`:n.files[0].name,l?t.querySelector("span").textContent=l:t.innerHTML=e};e.forEach(e=>e.addEventListener("change",n))});

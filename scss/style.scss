@@ -1,0 +1,27 @@
+/*** vendors ***/
+@import "vendor/normalize.min";
+@import "vendor/choices.min";
+@import "vendor/nouislider.min";
+@import "vendor/simplebar.min";
+
+/*** base ***/
+@import "base/variables";
+
+@import "base/fonts";
+@import "base/global";
+@import "base/overall";
+
+/*** blocks ***/
+@import "blocks/btn";
+@import "blocks/burger";
+@import "blocks/menu";
+@import "blocks/steps";
+@import "blocks/select";
+@import "blocks/input";
+@import "blocks/range-slider";
+@import "blocks/contacts";
+
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/order";
+@import "blocks/footer";

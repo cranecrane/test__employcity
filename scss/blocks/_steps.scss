@@ -1,0 +1,64 @@
+.steps {
+  $img-size: 100px;
+  $img-padding: 28px;
+  $after-mob-offset: 35px;
+
+  @media #{$desktop} {
+    display: flex;
+    gap: 26px;
+  }
+
+  &__item {
+    position: relative;
+
+    margin-bottom: $after-mob-offset;
+    width: 100%;
+
+      @media #{$desktop} {
+        margin-bottom: 0;
+        width: calc(100% / 5);
+      }
+  }
+
+  &__item:not(:last-child)::after {
+    content: url('../../icons/dots-mob.svg');
+    font-size: 0;
+
+    @media #{$desktop} {
+      position: absolute;
+      top: calc(#{$img-size} / 2 - 3px);
+      right: -68px;
+
+      content: url('../../icons/dots.svg');
+    }
+  }
+
+  &__item-img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+    border: 5px solid $accent-color-dark;
+    margin-bottom: 35px;
+    width: $img-size;
+    height: $img-size;
+
+    color: $white;
+    background-color: $accent-color-main;
+
+    @media #{$desktop} {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__item-text {
+    margin-bottom: $after-mob-offset;
+    font-size: 20px;
+
+    @media #{$desktop} {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+  }
+}

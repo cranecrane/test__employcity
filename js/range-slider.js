@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("rangeSlider"),t=document.getElementById("rangeSliderValue");e&&(noUiSlider.create(e,{start:[75],connect:"lower",step:1,range:{min:1,max:100}}),e.noUiSlider.on("update",function(e){t.textContent=parseFloat(e[0])}))});

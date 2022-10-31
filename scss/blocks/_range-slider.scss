@@ -1,0 +1,80 @@
+.range-slider {
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 21px;
+  }
+
+  &__descr {
+    max-width: 180px;
+    text-align: left;
+
+    @media #{$tablet} {
+      max-width: unset;
+      font-size: 18px;
+    }
+  }
+
+  &__value {
+    font-size: 24px;
+    line-height: 1;
+
+    @media #{$tablet} {
+      font-size: 18px;
+    }
+  }
+}
+
+.noUi-target {
+  background: rgba($color: $white, $alpha: .7);
+  border: 1px solid $white;
+  box-shadow: none;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-connect {
+  background: transparent;
+}
+
+.noUi-horizontal .noUi-handle {
+  --pointer-size: 24px;
+
+  top: 50%;
+  width: var(--pointer-size);
+  height: var(--pointer-size);
+
+  transform: translateY(-45%);
+}
+
+.noUi-handle {
+  border: 3px solid $accent-color-dark;
+  border-radius: 100%;
+  background: $accent-color-light;
+  cursor: pointer;
+  box-shadow: none;
+
+  transform-origin: center;
+  transition-property: border-color, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.noUi-handle:hover,
+.noUi-handle:active,
+.noUi-handle:focus-visible {
+  outline: none;
+  background-color: $accent-color-main;
+  transition-property: border-color, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+  display: none;
+}

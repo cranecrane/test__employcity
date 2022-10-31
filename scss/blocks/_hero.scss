@@ -1,0 +1,102 @@
+.hero {
+  background-image: url(../../img/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media #{$tablet} {
+    background-image: url(../../img/hero-bg-tablet.jpg);
+  }
+
+  @media #{$tablet-lg} {
+    background-image: url(../../img/hero-bg.jpg);
+  }
+
+  &__container {
+    padding-top: 90px;
+    padding-bottom: 40px;
+
+    @media #{$tablet} {
+      padding-top: 204px;
+      padding-bottom: 203px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    max-width: 400px;
+
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media #{$tablet} {
+      margin-bottom: 90px;
+      max-width: 70%;
+
+      font-size: 48px;
+    }
+  }
+
+  &__title--accent {
+    color: $accent-color-main;
+  }
+
+  &__descr {
+    margin-bottom: 11px;
+    font-size: 16px;
+    font-weight: 700;
+
+    @media #{$tablet} {
+      font-size: 20px;
+    }
+  }
+
+  &__descr-list {
+    margin-bottom: 40px;
+    padding-left: 16px;
+    list-style-type: "-";
+
+    @media #{$tablet-lg} {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__descr-item {
+    font-size: 16px;
+
+    @media #{$tablet} {
+      padding-left: 10px;
+      font-size: 20px;
+    }
+  }
+
+  &__descr-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  &__btn {
+    display: block;
+
+    width: 100%;
+    max-width: 300px;
+
+    @media #{$tablet} {
+      display: inline-block;
+
+      width: unset;
+      min-width: 183px;
+      max-width: unset;
+    }
+  }
+
+  &__btn:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media #{$tablet} {
+      margin-bottom: 0;
+      margin-right: 27px;
+    }
+  }
+}

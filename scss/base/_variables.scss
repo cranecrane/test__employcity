@@ -1,0 +1,46 @@
+/*** colors ***/
+$black: #000;
+$bright-gray: #3d4050;
+$cornflower-blue: #42a9ed;
+$havelock-blue: #3e9cdc;
+$jelly-bean: #286690;
+$sharade: #272733;
+$shark: #2a2b30;
+$silver: #bbb;
+$storm-gray: #6f6d7b;
+$vulcan: #10101d;
+$white: #fff;
+
+$accent-color-light: $cornflower-blue;
+$accent-color-main: $havelock-blue;
+$accent-color-dark: $jelly-bean;
+
+$bg-site-color: $sharade;
+
+$text-color-main: $black;
+$text-color-inverse: $white;
+
+/*** fonts ***/
+$font-family: 'Lato';
+$font-family-logo: 'Raleway';
+
+/*** z-index ***/
+$z-header: 90;
+$z-menu: 100;
+
+/*** sizes ***/
+$site-min-width: 320px;
+$max-width-container: 1270px;
+$padding-lr-container: 15px;
+$padding-lr-container-tablet: 50px;
+
+$input-padding: 12px 10px 13px;
+$input-border-radius: 3px;
+$input-border: 1px solid $white;
+$input-height: 48px;
+$input-font-size: 18px;
+
+/*** media-queries ***/
+$tablet: "(min-width: 768px)";
+$tablet-lg: "(min-width: 1024px)";
+$desktop: "(min-width: 1280px)";

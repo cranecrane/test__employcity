@@ -1,0 +1,24 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 13px;
+  color: $text-color-inverse;
+
+  @media #{$tablet} {
+    gap: 38px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  &__icon {
+    margin-right: 12px;
+    color: $accent-color-main;
+  }
+}

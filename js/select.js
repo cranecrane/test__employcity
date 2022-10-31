@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".select").forEach(function(e){new Choices(e,{searchEnabled:!1,shouldSort:!1});var t=e.getAttribute("aria-label");e.closest(".choices").setAttribute("aria-label",t),document.querySelectorAll(".choices__list").forEach(e=>{e.dataset.simplebar="true"})})});

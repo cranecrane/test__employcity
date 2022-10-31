@@ -1,0 +1,45 @@
+.btn-reset {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	max-width: $max-width-container;
+	padding: 0 $padding-lr-container;
+	margin: 0 auto;
+
+  @media #{$tablet-lg} {
+    padding-left: $padding-lr-container-tablet;
+    padding-right: $padding-lr-container-tablet;
+  }
+}
+
+.disable-scroll {
+	overflow: hidden;
+}
+
+.site-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+	overflow: hidden;
+  background-color: $bg-site-color;
+}
+
+.site-container main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
