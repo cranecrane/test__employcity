@@ -1,6 +1,6 @@
 # ТЗ для тестового задания на должность HTML-верстальщика
 
-> **Деплой:**https://cranecrane.github.io/test__employcity/
+> **Деплой:** https://cranecrane.github.io/test__employcity/
 
 [Исходный макет для выполнения задания]
 (https://www.figma.com/file/Jrw6yvrpmCRF7dhiXT0421/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5)
