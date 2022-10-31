@@ -46,7 +46,7 @@
   width: 9px;
   height: 5px;
 
-  background-image: url('../../icons/arrow-down.svg');
+  background-image: url('./icons/arrow-down.svg');
   background-repeat: no-repeat;
   background-position: center;
   transition: transform .3s ease-in-out;
@@ -62,7 +62,7 @@
 
 .choices[role="listbox"].is-open::after  {
   margin-top: -2.5px;
-  background-image: url('../../icons/arrow-up.svg');
+  background-image: url('./icons/arrow-up.svg');
 }
 
 .choices__list--dropdown, .choices__list[aria-expanded] {
